@@ -38,7 +38,7 @@
                         <p>It's that easy!</p>
                     </li>
                     <li>
-                        <h4>[attribute]</h4>
+                        <h4 class="review"><a href="https://css-tricks.com/almanac/selectors/a/attribute/" target="_blank">[attribute]</a></h4>
                         <p>Though tag names (p), IDs (#), and classes (.) are the most commonly used selectors in CSS, <em>any</em> of an element's attributes may be used as selectors.  For example, 'input[type="text"]'.  The [brackets] indicate an exact match, and will only select input elements of the type 'text'.</p>
                         <p>Attribute selectors are case-sensitive, written inside brackets, and there are seven different types of matches you can find.</p>
                         <p>Types of Matches:
@@ -46,16 +46,53 @@
                                 <li>[data-value] - attribute exists</li>
                                 <li>[data-value="foo"] - attribute has an exact value</li>
                                 <li>[data-value*="foo"] - attribute value contains this value somewhere in it</li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                                <li>[data-value~="foo"] - attribute has this value in a space-separated list somewhere</li>
+                                <li>[data-value^="foo"] - attribute value starts with this</li>
+                                <li>[data-value=|"foo"] - attribute value has this in a dash-separated list somewhere</li>
+                                <li>[data-value$="foo"] - attribute value ends with this</li>
                             </ul>
                         </p>
                     </li>
                 </ul>
                 <h3>B</h3>
+                <ul>
+                    <li>
+                        <h4><a href="https://css-tricks.com/almanac/selectors/b/blank/" target="_blank">:blank</a></h4>
+                        <p>The :blank pseudo-class builds on the :empty pseudo-class, in that it will select elements that contain HTML comments or nothing at all. Unlike :empty, :blank will also select elements that include whitespace</p>
+                        <p id="blank"><!--This paragraph only contains a comment--></p>
+                    </li>
+                     <li>
+                        <h4><a href="https://css-tricks.com/almanac/selectors/a/after-and-before/" target="_blank">:before</a></h4>
+                        <p id="before"><br>The ::before pseudo-selector is the same as after, except it adds content before the specified element</p>
+                    </li>
+                </ul>
                 <h3>C</h3>
+                <ul>
+                    <li id="checked">
+                        <h4><a href="https://css-tricks.com/almanac/selectors/c/checked/" target="_blank">:checked</a></h4>
+                        <p>This pseudo-class targets input elements of the type 'radio' and 'checkbox' that are in the selected state.
+                        <br>
+                        <input type="radio"><label>Select me!</label>
+                        </p>
+                    </li>
+                    <li id="child">
+                        <h4><a href="https://css-tricks.com/almanac/selectors/c/child/" target="_blank"></a>Child</h4>
+                        <p>A greater than '>' symbol in CSS serves as a child combinator.  It is used to target elements that are direct descendents only.  For example:
+                        <ul>
+                            <li>I'm a direct child of 'ul'</li>
+                            <li>I'm a direct child of 'ul'</li>
+                            <ol>
+                                <li>I'm not! :D</li>
+                            </ol>
+                        </ul>
+                        </p>
+
+                    </li>
+                    <li>
+                        <h4><a href="#" target="_blank"></a>Class</h4>
+                        <p></p>
+                    </li>
+                </ul>
                 <h3>D</h3>
                 <h3>E</h3>
                 <h3>F</h3>
@@ -82,7 +119,7 @@
                 <h3>A</h3>
                 <ul>
                     <li>
-                        <h4></h4>
+                        <h4><a href="#" target="_blank"></a></h4>
                         <p></p>
                     </li>
                 </ul>

@@ -1,3 +1,8 @@
+.review {
+  color: red!important;
+  font-weight: bold;
+}
+
 /*::after*/
 #after::after {
   content: "This is the content I added with the after pseudo selector!";
@@ -15,4 +20,20 @@ a#active-link:active {
 
 li#adjacent p + p {
   color: green;
+}
+
+p#blank:blank {
+  background: blue;
+}
+
+p#before::before {
+  content: "I'm the before content!  Shh, I'm not really part of the DOM :)";
+}
+
+#checked input:checked + label{
+  color: green;
+}
+
+li#child ul > li {
+  color: purple;
 }
