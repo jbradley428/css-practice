@@ -37,3 +37,17 @@ p#before::before {
 li#child ul > li {
   color: purple;
 }
+
+li#class .green {
+  color: green;
+}
+
+li#class .blue {
+  color: blue;
+}
+
+#default p ul li input[type="radio"]:default + label::after {
+  content: '(default)';
+  color: #999;
+  font-style: italic;
+}
